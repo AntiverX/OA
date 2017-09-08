@@ -26,14 +26,23 @@ class HomeController extends Controller
     public function index()
     {
         $users = DB::table('info')->where('id','1120141251')->first();
+        if( $users ){
 
-        return view('home',
-                [
-                    'id'     => $users->id,
-                    'name'   => $users->name,
-                    'state'  => $users->state,
-                    'grade'  => $users->grade,
-                    'belong' => $users->belong,
-                ]);
+            $activity = DB::table('activity')->where('id','1120141251')->get();
+            return view('home',
+                    [
+                        'id'     => $users->id,
+                        'name'   => $users->name,
+                        'state'  => $users->state,
+                        'grade'  => $users->grade,
+                        'belong' => $users->belong,
+                        'activity' => $activity
+                    ]);
+        }
+        else
+        {
+            return '你的个人信息不存在，请联系导员添加！';
+        }
+
     }
 }

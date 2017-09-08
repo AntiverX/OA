@@ -17,6 +17,7 @@ class CreateActivityTable extends Migration
             $table->string('id');
             $table->string('date');
             $table->string('name');
+            $table->string('teacher');
             $table->string('hours');
             $table->timestamps();
         });
