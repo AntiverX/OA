@@ -9,6 +9,6 @@ Windwos
 2.安装Composer  
 3.安装Laravel  
 运行  
->```composer global require "laravel/installer"```
+```composer global require "laravel/installer"```
 ## 注意事项
 1.Laravel教程见(https://laravel.com/docs/5.5)
