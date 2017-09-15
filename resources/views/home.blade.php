@@ -49,7 +49,29 @@
                         </div>
                     @endif
 
-                    <div class="row">
+
+                    <table class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>日期</th>
+                        <th>活动名称</th>
+                        <th>负责老师</th>
+                        <th>实践时长</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($activity as $act) : ?>
+                            <tr>
+                                <td> <?= $act->date ?></td>
+                                <td> <?= $act->name ?></td>
+                                <td> <?= $act->teacher ?></td>
+                                <td> <?= $act->hours ?></td>
+                            </tr>
+                        <?php endforeach ?>
+                    </tbody>
+                  </table>
+
+                    <!-- <div class="row">
                         <div class="col-md-2">日期</div>
                         <div class="col-md-6">活动名称</div>
                         <div class="col-md-2">负责老师</div>
@@ -63,7 +85,7 @@
                         <div class="col-md-2"> <?= $act->hours ?></div>
                         </div>
                     <?php endforeach ?>            
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
