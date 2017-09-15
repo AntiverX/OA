@@ -7,6 +7,8 @@
 Windwos   
 1.安装WAMP(http://www.wampserver.com/en/)  
 2.安装Composer  
-3.安装Laravel
+3.安装Laravel  
+运行  
+>```composer global require "laravel/installer"```
 ## 注意事项
 1.Laravel教程见(https://laravel.com/docs/5.5)
