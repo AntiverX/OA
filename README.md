@@ -4,7 +4,7 @@
 &emsp;&emsp;查询所属党支部，当前入党状态。  
 2.志愿时长查询  
 ### 使用说明
-Windwos   
+#### Windwos   
 * 安装WAMP(http://www.wampserver.com/en/)  
 * 安装Composer  
 * 安装Laravel，运行  
